@@ -1,0 +1,18 @@
+package MyOperator;
+
+public class MyInc2 {
+
+
+    public static void main(String[] args) {
+        int i=10;
+        int j=++i;
+        int m=j--;
+        int n=++m;
+        System.out.println(i);
+        System.out.println(j);
+        System.out.println(m);
+        System.out.println(n);
+    }
+
+
+}
