@@ -27,7 +27,7 @@ public class TwoDimensionalArray {
             for(int n = 0;n<j;n++){
                 System.out.print(arr[m][n]+"         ");
             }
-            System.out.println("");
+            System.out.println(" ");
         }
 
     }
