@@ -14,7 +14,7 @@ public class StringArray {
             name[j] = sc.next();
         }
         for(int k = 0;k< name.length;k++){
-            System.out.println("Student "+(k+1)+" ="+name[k]);
+            System.out.println("Student "+(k+1)+" = "+name[k]);
         }
     }
 
