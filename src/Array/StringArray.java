@@ -10,7 +10,7 @@ public class StringArray {
         int i =  sc.nextInt();
         String[] name = new String[i];
         for(int j = 0;j<name.length;j++){
-            System.out.println("Enter the name for student "+j+1);
+            System.out.println("Enter the name for student "+(j+1));
             name[j] = sc.next();
         }
         for(int k = 0;k< name.length;k++){
