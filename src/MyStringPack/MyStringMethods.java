@@ -13,6 +13,14 @@ public class MyStringMethods {
         System.out.println(s3 == s4);
         String s5 = s2.toLowerCase();
         System.out.println(s3 == s5);
+
+        String a = "ODISHA";
+        System.out.println(a.charAt(3));
+        System.out.println(a.indexOf('I'));
+        System.out.println(a.indexOf('N'));
+
+        System.out.println(s2.indexOf('O'));
+        System.out.println(s2.lastIndexOf('O'));
     }
 
 
