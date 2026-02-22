@@ -21,6 +21,12 @@ public class MyStringMethods {
 
         System.out.println(s2.indexOf('O'));
         System.out.println(s2.lastIndexOf('O'));
+
+        String s6 ="rOOmAn";
+        String s7 = s6.toLowerCase();
+
+        System.out.println(s6.equals(s7));
+        System.out.println(s6 == s7);
     }
 
 
