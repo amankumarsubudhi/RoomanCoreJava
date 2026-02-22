@@ -27,6 +27,9 @@ public class MyStringMethods {
 
         System.out.println(s6.equals(s7));
         System.out.println(s6 == s7);
+
+        String s8 = s6.toUpperCase();
+        System.out.println(s6.equals(s8));
     }
 
 
