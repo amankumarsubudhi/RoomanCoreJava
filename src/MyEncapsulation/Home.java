@@ -8,9 +8,7 @@ public class Home {
         t.setBrightness(60);
         System.out.println(t.getVolume());
         System.out.println(t.getBrightness());
-        Fan f = new Fan();
-        f.setSpeed(5);
-        System.out.println(f.getSpeed());
+        Fan f = new Fan(50);
     }
 
 
