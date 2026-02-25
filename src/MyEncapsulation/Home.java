@@ -10,5 +10,8 @@ public class Home {
         System.out.println(t.getBrightness());
         Fan f = new Fan(50);
         Car c = new Car();
+        Bike b = new Bike();
+        System.out.println("Bike Name = " + b.getName());
+        System.out.println("Bike Color = " + b.getColor());
     }
 }
