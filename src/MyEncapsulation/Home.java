@@ -13,5 +13,8 @@ public class Home {
         Bike b = new Bike();
         System.out.println("Bike Name = " + b.getName());
         System.out.println("Bike Color = " + b.getColor());
+        Bicycle bi = new Bicycle("Hero Cycles");
+        System.out.println("Bicycle Name = " + bi.getName());
+        System.out.println("Bicycle Cost = " + bi.getCost());
     }
 }
