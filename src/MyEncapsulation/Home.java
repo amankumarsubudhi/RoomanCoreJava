@@ -9,8 +9,6 @@ public class Home {
         System.out.println(t.getVolume());
         System.out.println(t.getBrightness());
         Fan f = new Fan(50);
+        Car c = new Car();
     }
-
-
-
 }
