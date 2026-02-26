@@ -4,6 +4,7 @@ class Dog{
 
     String name;
     int cost;
+    String breed = "German Shepard";
 
     public Dog(String name) {
         this.name = name;
@@ -42,6 +43,7 @@ public class Kennel {
     public static void main(String[] args) {
         Puppy p = new Puppy();
         p.bark();
+        System.out.println(p.breed);
     }
 
 
