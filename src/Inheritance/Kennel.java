@@ -24,7 +24,7 @@ class Dog{
 
 
     public void bark(){
-        System.out.println("Dog Is Barking...");
+        System.out.println("Dog Barks Loudly");
     }
 }
 
@@ -33,6 +33,11 @@ class Puppy extends Dog{
     public Puppy() {
         super();
         System.out.println("Puppy object created");
+    }
+
+    @Override
+    public void bark() {
+        System.out.println("Puppy Barks Very Low Voice");
     }
 }
 
