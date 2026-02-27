@@ -87,6 +87,7 @@ class FighterPlane extends Plane{
 
 public class MyJet {
     public static void main(String[] args) {
+        Plane mp;
         CargoPlane c = new CargoPlane();
         PassengerPlane p = new PassengerPlane();
         FighterPlane f = new FighterPlane();
@@ -104,5 +105,12 @@ public class MyJet {
         f.fly();
         f.landing();
         f.carryArms();
+
+        mp = c;
+        mp.takeOff();
+        mp =  p;
+        mp.takeOff();
+        mp = f;
+        mp.takeOff();
     }
 }
