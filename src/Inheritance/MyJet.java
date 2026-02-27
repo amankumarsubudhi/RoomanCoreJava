@@ -19,8 +19,16 @@ class Plane{
 
 class CargoPlane extends Plane{
     @Override
+    public void takeOff(){
+        System.out.println("CargoPlane takeOff");
+    }
+    @Override
     public void fly() {
         System.out.println("Cargo Plane Fly At Lower Level");
+    }
+    @Override
+    public void landing() {
+        System.out.println("Cargo Plane Landing");
     }
 
 
@@ -32,8 +40,18 @@ class CargoPlane extends Plane{
 
 class PassengerPlane extends Plane{
     @Override
+    public void takeOff(){
+        System.out.println("PassengerPlane takeOff");
+    }
+
+    @Override
     public void fly() {
         System.out.println("Passenger Plane Fly At Middle Level");
+    }
+
+    @Override
+    public void landing() {
+        System.out.println("Passenger Plane Landing");
     }
 
     public void carryPassenger(){
@@ -43,12 +61,23 @@ class PassengerPlane extends Plane{
 }
 
 class FighterPlane extends Plane{
+
+    @Override
+    public void takeOff() {
+        System.out.println("FighterPlane takeOff");
+    }
+
     @Override
     public void fly() {
         System.out.println("Fighter Plane Fly At Higher Level");
     }
 
-    public void Arms(){
+    @Override
+    public void landing() {
+        System.out.println("FighterPlane Landing");
+    }
+
+    public void carryArms(){
         System.out.println("Fighter Plane Carries Weapons.");
     }
 
@@ -61,8 +90,19 @@ public class MyJet {
         CargoPlane c = new CargoPlane();
         PassengerPlane p = new PassengerPlane();
         FighterPlane f = new FighterPlane();
+        c.takeOff();
         c.fly();
+        c.landing();
+        c.carryCargo();
+        System.out.println(" ");
+        p.takeOff();
         p.fly();
+        p.landing();
+        p.carryPassenger();
+        System.out.println(" ");
+        f.takeOff();
         f.fly();
+        f.landing();
+        f.carryArms();
     }
 }
