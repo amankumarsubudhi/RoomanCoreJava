@@ -22,6 +22,12 @@ class CargoPlane extends Plane{
     public void fly() {
         System.out.println("Cargo Plane Fly At Lower Level");
     }
+
+
+     public void carryCargo(){
+        System.out.println("Cargo Plane Carries Cargo.");
+     }
+
 }
 
 class PassengerPlane extends Plane{
@@ -29,6 +35,11 @@ class PassengerPlane extends Plane{
     public void fly() {
         System.out.println("Passenger Plane Fly At Middle Level");
     }
+
+    public void carryPassenger(){
+        System.out.println("Passenger Plane Carries Passenger.");
+    }
+
 }
 
 class FighterPlane extends Plane{
@@ -36,6 +47,11 @@ class FighterPlane extends Plane{
     public void fly() {
         System.out.println("Fighter Plane Fly At Higher Level");
     }
+
+    public void Arms(){
+        System.out.println("Fighter Plane Carries Weapons.");
+    }
+
 }
 
 
