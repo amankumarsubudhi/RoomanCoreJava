@@ -106,6 +106,11 @@ public class MyJet {
         f.landing();
         f.carryArms();
 
+        //p.carryArms();
+        //Can't Call Specialized Method With The Parent Class Variable
+        //We Have To Downcast It To Use
+        ((FighterPlane)f).carryArms();
+
         mp = c;
         mp.takeOff();
         mp =  p;
