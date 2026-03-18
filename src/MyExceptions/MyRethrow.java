@@ -32,7 +32,7 @@ public class MyRethrow {
         try {
             m.m1();
         } catch (Exception e) {
-            System.out.println("Exception Caught in The Main Method");
+            System.out.println("Exception Caught In The Main Method");
             e.printStackTrace();
         }
 
