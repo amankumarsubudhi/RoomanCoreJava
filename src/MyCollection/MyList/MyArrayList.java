@@ -24,6 +24,15 @@ public class MyArrayList {
 
 
 */
+
+        /*
+        // When To Go For ArrayList.
+        // When You Want insertion order to be preserved.
+        // When You Want Duplicates To Be Allowed.
+        // When You Want Null Insertion.
+        // More Than Insertion, Your Requirements Is Random Access or Retrieval Go For ArrayList.
+        */
+
         ArrayList al = new ArrayList();
 
         // Primitive Datatype Automatically Converted Into Wrapper Class Is Known As Auto Boxing.
@@ -92,6 +101,16 @@ public class MyArrayList {
 
         while(litr.hasPrevious()){
             System.out.println(litr.previous());
+        }
+
+        ListIterator litr1 = al.listIterator(al.size());
+
+        System.out.println(" ");
+        System.out.println("Bringing The Cursor To The Last Of The List That Is size or length of an list then Printing From There Using previous");
+        System.out.println(" ");
+
+        while (litr1.hasPrevious()){
+            System.out.println(litr1.previous());
         }
 
 
