@@ -83,6 +83,17 @@ public class MyArrayList {
             System.out.println(litr.next());
         }
 
+        System.out.println(" ");
+
+        System.out.println("Using hasPrevious(), previous()");
+
+        System.out.println(" ");
+
+
+        while(litr.hasPrevious()){
+            System.out.println(litr.previous());
+        }
+
 
     }
 
