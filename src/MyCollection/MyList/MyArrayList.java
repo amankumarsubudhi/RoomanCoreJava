@@ -1,6 +1,7 @@
 package MyCollection.MyList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class MyArrayList {
 
@@ -24,7 +25,8 @@ public class MyArrayList {
 */
         ArrayList al = new ArrayList();
 
-        al.add(1);
+        // Primitive Datatype Automatically Converted Into Wrapper Class Is Known As Auto Boxing.
+        al.add(1); //a1.add(new Integer(10));
         al.add(2);
         al.add(3);
 
@@ -56,6 +58,16 @@ public class MyArrayList {
 
         for(Object o : al){
             System.out.println(o);
+        }
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("Using Iterator");
+
+        Iterator itr = al.iterator();
+
+        while(itr.hasNext()){
+            System.out.println(itr.next());
         }
 
 
