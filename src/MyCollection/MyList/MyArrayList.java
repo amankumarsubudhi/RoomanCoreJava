@@ -2,6 +2,7 @@ package MyCollection.MyList;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class MyArrayList {
 
@@ -68,6 +69,18 @@ public class MyArrayList {
 
         while(itr.hasNext()){
             System.out.println(itr.next());
+        }
+
+
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("Using List Iterator");
+
+        ListIterator litr = al.listIterator();
+
+        while(litr.hasNext()){
+            System.out.println(litr.next());
         }
 
 
