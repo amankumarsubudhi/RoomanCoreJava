@@ -2,9 +2,14 @@ package MySetInterface;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
-class St{
+class St implements Comparable<St>{
     String name;
+
+    public String getName() {
+        return name;
+    }
 
     public St(String name){
         this.name=name;
@@ -15,6 +20,12 @@ class St{
         return "St{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(St o) {
+//        return this.getName().compareTo(o.getName()); // It Returns Alphabetically.
+        return -this.getName().compareTo(o.getName());  // It Returns Reverse Of Alphabetically.
     }
 }
 
@@ -39,6 +50,16 @@ public class MyHashSet2 {
         lhs.add(new St("Aks 8"));
 
         System.out.println(lhs);
+
+
+        TreeSet<St> ths = new TreeSet<>();
+        ths.add(new St("Aks 10"));
+        ths.add(new St("Aks 12"));
+        ths.add(new St("Aks 14"));
+        ths.add(new St("Aks 16"));
+        ths.add(new St("Aks 18"));
+
+        System.out.println(ths);
 
 
     }
