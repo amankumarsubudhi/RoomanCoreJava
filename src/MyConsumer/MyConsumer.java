@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-class Movie{
+/*class Movie{
     String name;
     String review;
     String collection;
@@ -59,6 +59,12 @@ class Movie{
     public void setName(String name) {
         this.name = name;
     }
+}*/
+
+// record creates parameterized constructor and overrides all the methods like
+// toString, equals, hashCode, getters and setters
+record Movie(String name, String review, String collection) {
+
 }
 
 
@@ -81,8 +87,8 @@ public class MyConsumer {
 
         Consumer<Movie> con = (m) -> {
 
-            if(m.review.equals("hit")){
-                System.out.println(m.getName());
+            if(m.review().equals("hit")){
+                System.out.println(m.name());
             }
         };
 
